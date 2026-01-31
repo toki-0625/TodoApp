@@ -20,7 +20,6 @@ Next.js（App Router）と Supabase を使用して作成した、
 - ユーザー登録 / ログイン
 - Todoの新規作成
 - Todo一覧表示
-- Todo詳細表示
 - Todo編集
 - Todo削除
 - ログアウト機能
