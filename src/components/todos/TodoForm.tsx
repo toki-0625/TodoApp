@@ -28,7 +28,7 @@ export default function TodoForm({ onAdd }: Props) {
           className="h-11 flex-1 rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-900
                      placeholder:text-gray-400
                      focus:outline-none focus:ring-2 focus:ring-gray-300"
-          placeholder="タスクを入力"
+          placeholder="タスクを入力してください"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           onKeyDown={(e) => {

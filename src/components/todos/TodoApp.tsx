@@ -68,7 +68,7 @@ export default function TodoApp() {
 
   const onDelete = async (todo: Todo) => {
     clearMessage();
-    const ok = window.confirm(`このタスクを削除する？\n\n${todo.title}`);
+    const ok = window.confirm(`このタスクを削除しますか？\n\n${todo.title}`);
     if (!ok) return;
     await remove(todo.id);
   };
