@@ -27,17 +27,22 @@ export default function LoginPage() {
 
   return (
     <main className="min-h-screen bg-slate-50 grid place-items-center px-4">
-      <section className="w-full max-w-md rounded-2xl border bg-white shadow-sm p-6">
-        <h1 className="text-2xl font-semibold tracking-tight">ログイン</h1>
-        <p className="mt-1 text-sm text-slate-500">
+      <section className="w-full max-w-md rounded-2xl border bg-white shadow-sm p-6 text-slate-900">
+        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+          ログイン
+        </h1>
+
+        <p className="mt-1 text-sm text-slate-600">
           メールアドレスとパスワードでログインできます
         </p>
 
         <div className="mt-6 space-y-4">
           <div className="space-y-2">
-            <label className="text-sm font-medium text-slate-700">メールアドレス</label>
+            <label className="text-sm font-medium text-slate-700">
+              メールアドレス
+            </label>
             <input
-              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900/20"
+              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-slate-900/20"
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -46,9 +51,11 @@ export default function LoginPage() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium text-slate-700">パスワード</label>
+            <label className="text-sm font-medium text-slate-700">
+              パスワード
+            </label>
             <input
-              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900/20"
+              className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-slate-900/20"
               placeholder="6文字以上"
               type="password"
               value={password}
@@ -78,7 +85,9 @@ export default function LoginPage() {
           {message && (
             <p
               className={`pt-2 text-sm ${
-                message.startsWith("登録成功") ? "text-emerald-700" : "text-red-600"
+                message.startsWith("登録成功")
+                  ? "text-emerald-700"
+                  : "text-red-600"
               }`}
             >
               {message}
