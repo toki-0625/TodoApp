@@ -65,12 +65,12 @@ export const useTodos = (userId: string | null) => {
     const t = title.trim();
     if (!t) {
       setMessageType("info");
-      setMessage("タスク名を入力してね");
+      setMessage("タスク名を入力してください");
       return false;
     }
     if (t.length > 100) {
       setMessageType("info");
-      setMessage("100文字以内でお願い");
+      setMessage("テキストは100文字以内にしてください");
       return false;
     }
 
@@ -92,7 +92,7 @@ export const useTodos = (userId: string | null) => {
     try {
       await toggleDone(todo.id, todo.is_done);
       setMessageType("success");
-      setMessage(todo.is_done ? "未完了に戻したよ" : "完了にしたよ");
+      setMessage(todo.is_done ? "未完了に戻しました" : "完了にしました");
       await reload();
     } catch (e) {
       setMessageType("error");
@@ -106,11 +106,11 @@ export const useTodos = (userId: string | null) => {
     const t = title.trim();
     if (!t) {
       setMessageType("info");
-      return setMessage("タスク名を空にできないよ");
+      return setMessage("タスク名が空です");
     }
     if (t.length > 100) {
       setMessageType("info");
-      return setMessage("100文字以内でお願い");
+      return setMessage("テキストは100文字以内にしてくださいい");
     }
 
     try {

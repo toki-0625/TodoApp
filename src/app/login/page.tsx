@@ -15,7 +15,7 @@ export default function LoginPage() {
     setMessage("");
     const { error } = await supabase.auth.signUp({ email, password });
     if (error) return setMessage("登録失敗：" + error.message);
-    setMessage("登録成功！このままログインしてね");
+    setMessage("登録成功！このままログインしてください");
   };
 
   const login = async () => {
