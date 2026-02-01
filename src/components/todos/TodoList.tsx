@@ -12,8 +12,14 @@ type Props = {
 };
 
 export default function TodoList({ todos, loading, onToggle, onEdit, onDelete }: Props) {
-  if (loading) return <p className="mt-3">読み込み中...</p>;
-  if (todos.length === 0) return <p className="mt-3">進行中のタスクはありません</p>;
+  if (loading) return <p className="mt-3 text-sm text-slate-600 opacity-100">読み込み中...</p>;
+
+  if (todos.length === 0)
+    return (
+      <p className="mt-3 text-sm text-slate-500 opacity-100">
+        進行中のタスクはありません
+      </p>
+    );
 
   return (
     <ul className="mt-3 space-y-2">
