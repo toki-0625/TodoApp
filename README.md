@@ -9,7 +9,7 @@ Next.js（App Router）と Supabase を使用して作成した、
 ---
 
 ## Demo
-- URL：todo-list-six-rho-31.vercel.app
+- URL：(http://todo-list-toki0625s-projects.vercel.app/)
 - ID：vcfg16ttest@gmail.com
 - パスワード：xjnkcsfhrequFEG
 
